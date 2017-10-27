@@ -94,11 +94,22 @@ new branch for your work on the next question!
 
 // Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
+    const sumOne = sum(a,b)[0];
+    const sumTotal = sum(sumOne,c)[0];
+    console.log('The answer to sum one was:' + sumOne);
+    console.log('The answer to sumtotal was:' + sumTotal);
 
+    const productOne = multiply(a,b)[0];
+    const productTotal = multiply(productOne,c)[0];
+    console.log('The answer to product one was:' + productOne);
+    console.log('The answer to producttotal was:' + productTotal);
+
+    return[sumTotal, productTotal, a + ' and ' + b + ' and ' + c + ' sum to ' + sumTotal + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productTotal + '.'];
 }
 
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 
 /////////////////////////////////////
