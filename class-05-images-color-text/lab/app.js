@@ -144,12 +144,8 @@ function sumArray(testArray){ //eslint-disable-line
     //    console.log(array[0]);
     const newSumB = sum(newSumA,testArray[2])[0];
     console.log(newSumB);
-    return[newSumB, testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + newSumB + ' is their sum.']
-
-  //  console.log('the answer was:' + array);
-    //   return[sum of numbers,'2,3,4 was passed']
+    return[newSumB, testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + newSumB + ' is their sum.'];
 }
-
 
 // Here is the test for sumArray(); uncomment it to run it
 testSumArray();
@@ -180,13 +176,15 @@ new branch for your work on the next question!
 */
 
 // Write your code here
-// function multiplyArray(testArray){ //eslint-disable-line
-//     const A = multiply(testArray[0],testArray[1][0]);
-//     const B = multiply(A [0], testArray[2][0]);
-//     console.log(A);
+function multiplyArray(testArray){ //eslint-disable-line
+    const newProductOne = multiply(testArray[0],testArray[1])[0];
+    const newProductTwo = multiply(newProductOne,testArray[2])[0];
+    console.log('The answer to newProductOne was:' + newProductOne);
+    console.log('The answer to newProductTwo was:' + newProductTwo);
 
-//     return['The numbers' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + B + '.']
-// }
+    return[newProductTwo + ' The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + newProductTwo + '.'];
+
+}
 
 
 
