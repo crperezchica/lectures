@@ -176,17 +176,28 @@ new branch for your work on the next question!
 */
 
 // Write your code here
-function multiplyArray(testArray){ //eslint-disable-line
-    const newProductOne = multiply(testArray[0],testArray[1])[0];
-    const newProductTwo = multiply(newProductOne,testArray[2])[0];
-    console.log('The answer to newProductOne was:' + newProductOne);
-    console.log('The answer to newProductTwo was:' + newProductTwo);
 
-    return[newProductTwo + ' The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + newProductTwo + '.'];
+
+function multiplyArray(testArray){ //eslint-disable-line   
+//     let total = 1;
+//     for(let i = 0; 1 < testArray.length; i++)
+//         total = multiply(total, testArray[i]) [0];
+
+// }       
+// testMultiplyArray([4,5,6]);
+    
+   
+
+    const newProductOne = multiply(testArray[0],testArray[1])[0];
+    console.log(newProductOne);
+    const newProductTwo = multiply(newProductOne,testArray[2])[0];
+    console.log(newProductTwo);
+
+
+    return[newProductTwo, 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + newProductTwo + '.'];
 
 }
 
 
-
-// Here is the test for multiplyArray(); uncomment it to run it
+// // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray();
